@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ім'я" />
+        <EditText
+            android:id="@+id/first_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть ім'я"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Прізвище" />
+        <EditText
+            android:id="@+id/last_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть прізвище"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Електронна пошта" />
+        <EditText
+            android:id="@+id/email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть email"
+            android:inputType="textEmailAddress" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Медичні діагнози" />
+        <EditText
+            android:id="@+id/age_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть медичні діагнози"
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дати прийому " />
+        <EditText
+            android:id="@+id/gender_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть дати прийому "
+            android:inputType="text" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Результати аналізів" />
+        <EditText
+            android:id="@+id/schedule_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть результати аналізів"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Додаткова інформація" />
+        <EditText
+            android:id="@+id/contact_info_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Введіть додаткову інформацію"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp"
+            android:gravity="center_horizontal">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="◀"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/save_changes_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Зберегти зміни"
+                android:layout_marginEnd="16dp" />
+
+            <Button
+                android:id="@+id/delete_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Видалити" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
